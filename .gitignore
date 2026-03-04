@@ -1,0 +1,27 @@
+# Ignore system files
+Thumbs.db
+.DS_Store
+*.lnk
+*.ini
+
+# Ignore OS folders
+AppData/
+OneDrive/
+Documents/
+Downloads/
+Pictures/
+Videos/
+Music/
+Saved Games/
+Searches/
+Contacts/
+Links/
+Favorites/
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore libraries or builds
+lib/
+node_modules/
