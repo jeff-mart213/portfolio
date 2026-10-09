@@ -1,104 +1,269 @@
 (function ($) {
     "use strict";
-    
-    // ===== LOADER =====
+
+    // =========================================================
+    // LOADER
+    // =========================================================
     var loader = function () {
         setTimeout(function () {
             if ($('#loader').length > 0) {
                 $('#loader').removeClass('show');
             }
-        }, 1);
+        }, 300);
     };
+
     loader();
-    
-    // ===== WOW.js INIT =====
-    new WOW().init();
-    
-    // ===== BACK TO TOP BUTTON =====
-    $(window).scroll(function () {
+
+
+    // =========================================================
+    // WOW.JS
+    // =========================================================
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
+
+
+    // =========================================================
+    // BACK TO TOP BUTTON
+    // =========================================================
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 200) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+
+    $('.back-to-top').on('click', function () {
+        $('html, body').animate(
+            {
+                scrollTop: 0
+            },
+            1200,
+            'easeInOutExpo'
+        );
+
         return false;
     });
-    
-    // ===== STICKY NAVBAR =====
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
+
+
+    // =========================================================
+    // STICKY NAVBAR
+    // =========================================================
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 30) {
             $('.navbar').addClass('nav-sticky');
         } else {
             $('.navbar').removeClass('nav-sticky');
         }
     });
-    
-    // ===== SMOOTH SCROLLING ON NAV LINKS =====
+
+
+    // =========================================================
+    // SMOOTH SCROLLING
+    // =========================================================
     $(".navbar-nav a").on('click', function (event) {
+
         if (this.hash !== "") {
             event.preventDefault();
-            
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
-            
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
+
+            var target = $(this.hash);
+
+            if (target.length) {
+                $('html, body').animate(
+                    {
+                        scrollTop: target.offset().top - 70
+                    },
+                    1000,
+                    'easeInOutExpo'
+                );
+            }
+
+            $('.navbar-nav .active').removeClass('active');
+            $(this).addClass('active');
+
+            // Close mobile navbar after clicking a link
+            if ($('.navbar-toggler').is(':visible')) {
+                $('.navbar-collapse').collapse('hide');
             }
         }
     });
-    
-    // ===== TYPED.JS HERO TEXT =====
-    if ($('.hero .typed-text').length) {
-        var typed = new Typed('.hero .typed-text', {
+
+
+    // =========================================================
+    // TYPED.JS - HERO TEXT
+    // =========================================================
+    if ($('.hero .typed-text').length && typeof Typed !== 'undefined') {
+
+        new Typed('.hero .typed-text', {
+
             strings: [
-                "Web Designer",
-                "Web Developer",
                 "Frontend Developer",
-                "Apps Designer",
-                "Apps Developer"
+                "React & Next.js Developer",
+                "Full-Stack Developer",
+                "Backend & API Developer",
+                "Mobile Application Developer"
             ],
-            typeSpeed: 80,
-            backSpeed: 50,
-            backDelay: 1500,
-            loop: true
+
+            typeSpeed: 70,
+            backSpeed: 40,
+            backDelay: 1800,
+            startDelay: 500,
+            loop: true,
+            smartBackspace: true
         });
     }
-    
-    // ===== SKILLS BAR ANIMATION =====
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+
+
+    // =========================================================
+    // SKILLS BAR ANIMATION
+    // =========================================================
+    if ($('.skills').length && typeof $.fn.waypoint !== 'undefined') {
+
+        $('.skills').waypoint(function () {
+
+            $('.progress .progress-bar').each(function () {
+
+                var value = $(this).attr('aria-valuenow');
+
+                $(this).css(
+                    'width',
+                    value + '%'
+                );
+
+            });
+
+        }, {
+            offset: '80%'
         });
-    }, {offset: '80%'});
+    }
 
-    // ===== TESTIMONIALS CAROUSEL =====
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
+
+    // =========================================================
+    // TESTIMONIAL CAROUSEL
+    // =========================================================
+    if ($(".testimonials-carousel").length && typeof $.fn.owlCarousel !== 'undefined') {
+
+        $(".testimonials-carousel").owlCarousel({
+
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+
+            dots: true,
+            loop: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                992: {
+                    items: 1
+                }
             }
+
+        });
+    }
+
+
+    // =========================================================
+    // PORTFOLIO FILTER
+    // =========================================================
+    if ($('.portfolio-container').length && typeof $.fn.isotope !== 'undefined') {
+
+        var portfolioIsotope = $('.portfolio-container').isotope({
+
+            itemSelector: '.portfolio-item',
+
+            layoutMode: 'fitRows',
+
+            transitionDuration: '0.6s'
+
+        });
+
+
+        $('#portfolio-filter li').on('click', function () {
+
+            var filterValue = $(this).attr('data-filter');
+
+            $('#portfolio-filter li')
+                .removeClass('filter-active');
+
+            $(this)
+                .addClass('filter-active');
+
+            portfolioIsotope.isotope({
+                filter: filterValue
+            });
+
+        });
+    }
+
+
+    // =========================================================
+    // ACTIVE NAVIGATION WHILE SCROLLING
+    // =========================================================
+    var sections = [];
+
+    $('.navbar-nav a[href^="#"]').each(function () {
+
+        var sectionId = $(this).attr('href');
+
+        if (
+            sectionId !== '#' &&
+            $(sectionId).length
+        ) {
+            sections.push({
+                id: sectionId,
+                link: this
+            });
         }
-    });
-    
-    // ===== PORTFOLIO FILTER =====
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+
     });
 
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+
+    $(window).on('scroll', function () {
+
+        var scrollPosition = $(window).scrollTop() + 120;
+
+        sections.forEach(function (section) {
+
+            var sectionElement = $(section.id);
+
+            if (!sectionElement.length) {
+                return;
+            }
+
+            var sectionTop = sectionElement.offset().top;
+            var sectionBottom = sectionTop + sectionElement.outerHeight();
+
+            if (
+                scrollPosition >= sectionTop &&
+                scrollPosition < sectionBottom
+            ) {
+
+                $('.navbar-nav a')
+                    .removeClass('active');
+
+                $(section.link)
+                    .addClass('active');
+            }
+
+        });
+
     });
+
+
+    // =========================================================
+    // INITIAL NAVBAR STATE
+    // =========================================================
+    if ($(window).scrollTop() > 30) {
+        $('.navbar').addClass('nav-sticky');
+    }
+
 
 })(jQuery);

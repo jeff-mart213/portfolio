@@ -41,43 +41,327 @@
 <a href="#team" class="nav-item nav-link">Team</a>
 <a href="#blog" class="nav-item nav-link">Blog</a>
 <a href="#contact" class="nav-item nav-link">Contact</a>
+
+    <a href="#home" class="nav-item nav-link active">
+        Home
+    </a>
+
+    <a href="#about" class="nav-item nav-link">
+        About
+    </a>
+
+    <a href="#service" class="nav-item nav-link">
+        Skills
+    </a>
+
+    <a href="#portfolio" class="nav-item nav-link">
+        Projects
+    </a>
+
+    <a href="#team" class="nav-item nav-link">
+        Process
+    </a>
+
+    <a href="#blog" class="nav-item nav-link">
+        Blog
+    </a>
+
+    <a href="#contact" class="nav-item nav-link">
+        Contact
+    </a>
+
 </div>
 </div>
 </div>
 </div>
 
-<!-- HERO -->
-<div class="hero" id="home">
 
-    <!-- Background Video -->
-    <video 
-        class="hero-video"
-        autoplay 
-        muted 
-        loop 
-        playsinline>
-        <source src="img/myvideo.mp4" type="video/mp4">
-    </video>
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <!-- THREE.JS BACKGROUND -->
+
+    <canvas id="hero3d"></canvas>
+
+
+    <!-- HERO CONTAINER -->
 
     <div class="container-fluid">
-        <div class="row align-items-center">
 
-            <div class="col-md-6">
+
+        <!-- HERO ROW -->
+
+        <div class="row align-items-center hero-main-row">
+
+
+            <!-- =================================================
+                 HERO TEXT
+                 ================================================= -->
+
+            <div class="col-lg-6 text-center text-lg-start">
+
+
                 <div class="hero-content">
-                    <p class="intro-text">I'm</p>
-                    <h1>JEFF MART</h1>
 
-                    <div class="typed-text"></div> <!-- leave empty for JS -->
 
-                    <div class="hero-btn">
-                        <a class="btn primary-btn" href="#">Hire Me</a>
-                        <a class="btn outline-btn" href="#contact">Contact Me</a>
+                    <p class="hero-subtitle">
+                        HELLO, I'M JEFFERY
+                    </p>
+
+
+                    <h1>
+                        JEFF MART
+                    </h1>
+
+
+                    <h2>
+
+                        <span class="typed-text"></span>
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I build fast, responsive web and mobile
+                        applications with modern frontend technologies,
+                        APIs and scalable backend systems.
+
+                    </p>
+
+
+                    <!-- HERO BUTTONS -->
+
+                    <div class="hero-buttons">
+
+
+                        <a
+                            href="#portfolio"
+                            class="btn hero-btn"
+                        >
+                            View My Work
+                        </a>
+
+
+                        <a
+                            href="#contact"
+                            class="btn hero-btn-outline"
+                        >
+                            Contact Me
+                        </a>
+
+
                     </div>
+
+
                 </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 HERO IMAGE
+                 ================================================= -->
+
+            <div class="col-lg-6 text-center">
+
+
+                <div class="about-img tilt-card hero-about-image">
+
+
+                    <img
+                        id="heroImage"
+                        src="img/jeff3.jpeg"
+                        alt="Jeffery Ojemeneh - Developer"
+                    >
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- END HERO ROW -->
+
+
+    </div>
+    <!-- END HERO CONTAINER -->
+
+
+</section>
+<!-- END HERO -->
+
+
+<!-- =====================================================
+     PART 1 ENDS HERE
+     ===================================================== -->
+
+     <!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+
+            <!-- ABOUT CONTENT -->
+            <div class="col-lg-10 col-xl-9">
+
+                <div class="about-content">
+
+                    <div class="section-header text-center">
+
+                        <p>About Me</p>
+
+                        <h2>
+                            Building digital products from frontend to backend.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <p>
+                            I'm a developer focused on building responsive web
+                            applications, dashboards, APIs, backend systems
+                            and mobile experiences.
+                        </p>
+
+                        <p>
+                            My work covers both frontend and backend development,
+                            from creating modern interfaces with React and
+                            Next.js to working with APIs, authentication,
+                            databases, real-time functionality and deployment.
+                        </p>
+
+                        <p>
+                            I enjoy turning ideas into functional products and
+                            solving practical problems through clean, scalable
+                            and user-focused software.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <div class="skills">
+
+                        <!-- FRONTEND -->
+
+                        <div class="skill-name">
+
+                            <p>Frontend Development</p>
+
+                            <p>React / Next.js</p>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 90%"
+                                aria-valuenow="90"
+                                aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+
+                        </div>
+
+
+                        <!-- JAVASCRIPT -->
+
+                        <div class="skill-name">
+
+                            <p>JavaScript Development</p>
+
+                            <p>JavaScript / TypeScript</p>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 88%"
+                                aria-valuenow="88"
+                                aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+
+                        </div>
+
+
+                        <!-- BACKEND -->
+
+                        <div class="skill-name">
+
+                            <p>Backend Development</p>
+
+                            <p>Node.js / Express</p>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+
+                        </div>
+
+
+                        <!-- DATABASE -->
+
+                        <div class="skill-name">
+
+                            <p>Databases & APIs</p>
+
+                            <p>MongoDB / PostgreSQL / REST</p>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 78%"
+                                aria-valuenow="78"
+                                aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
+
     </div>
+
 
 </div>
 
@@ -294,238 +578,1641 @@ Tasks range from collaborating with clients and designers to writing code, debug
 </div>
 </div>
 
+</section>
 
 
-<!-- TEAM -->
+
+
+
+<!-- ================= DEVELOPMENT APPROACH ================= -->
 <div class="team" id="team">
-<div class="container">
-<div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-<p>My Team</p>
-<h2>Expert Team Members</h2>
-</div>
-<div class="row">
 
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-<div class="team-item">
-<div class="team-img">
-<img src="img/team-1.jpg" alt="Image">
-</div>
-<div class="team-text">
-<h2>Mollie Ross</h2>
-<h4>Web Designer</h4>
-<p>Web design is the creative process of building and styling a website to provide a positive and efficient user experience.</p>
-<div class="team-social">
-<a class="btn" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-<a class="btn" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-<div class="team-item">
-<div class="team-img">
-<img src="img/team-2.jpg" alt="Image">
-</div>
-<div class="team-text">
-<h2>Dylan Adams</h2>
-<h4>Web Developer</h4>
-<p>Web development is the process of creating and maintaining websites and web applications that run on the internet. It involves a blend of technical skills like coding (HTML, CSS, JavaScript).</p>
-<div class="team-social">
-<a class="btn" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-<a class="btn" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-<div class="team-item">
-<div class="team-img">
-<img src="img/team-3.jpg" alt="Image">
-</div>
-<div class="team-text">
-<h2>Jennifer Page</h2>
-<h4>Apps Designer</h4>
-<p>App design focuses on combining a beautiful, functional UI with an intuitive UX to create a delightful and successful product.</p>
-<div class="team-social">
-<a class="btn" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-<a class="btn" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-<div class="team-item">
-<div class="team-img">
-<img src="img/team-4.jpg" alt="Image">
-</div>
-<div class="team-text">
-<h2>Josh Dunn</h2>
-<h4>Apps Developer</h4>
-<p>App development is the multi-stage process of designing, building, testing, and deploying software for various devices to meet user needs and business goals.</p>
-<div class="team-social">
-<a class="btn" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-<a class="btn" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-
-<!-- CONTACT -->
-<div class="contact" id="contact">
     <div class="container">
+
+        <div class="section-header text-center">
+
+            <p>How I Work</p>
+
+            <h2>From Idea to Working Product</h2>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <!-- UNDERSTAND -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-lightbulb"></i>
+
+                        </div>
+
+                        <h2>
+                            01. Understand
+                        </h2>
+
+                        <h4>
+                            Requirements & Planning
+                        </h4>
+
+                        <p>
+                            I first understand the product, users,
+                            requirements and technical challenges
+                            before starting development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUILD -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-code"></i>
+
+                        </div>
+
+                        <h2>
+                            02. Build
+                        </h2>
+
+                        <h4>
+                            Frontend, Backend & Mobile
+                        </h4>
+
+                        <p>
+                            I build the user interface, application
+                            logic, APIs, database integrations and
+                            mobile experiences required by the product.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+<!-- ================= SERVICES ================= -->
+<section class="service" id="service">
+
+    <div class="container">
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-header text-center">
+
+            <p>What I Build</p>
+
+            <h2>
+                Development & Technical Services
+            </h2>
+
+        </div>
+
+
+        <!-- SERVICE GRID -->
+
+        <div class="row justify-content-center">
+
+
+            <!-- ================= FRONTEND ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+
+                        <i class="fa fa-laptop-code"></i>
+
+                    </div>
+
+                    <div class="service-text">
+
+                        <h3>
+                            Frontend Development
+                        </h3>
+
+                        <p>
+                            Responsive and interactive web applications
+                            using modern frontend technologies and
+                            component-based architectures.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Tailwind</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= BACKEND ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+
+                        <i class="fa fa-server"></i>
+
+                    </div>
+
+                    <div class="service-text">
+
+                        <h3>
+                            Backend & API Development
+                        </h3>
+
+                        <p>
+                            Backend services, REST APIs, authentication,
+                            database integration and application business
+                            logic.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>PostgreSQL</span>
+                            <span>REST API</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= MOBILE ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+
+                        <i class="fa fa-mobile-alt"></i>
+
+                    </div>
+
+                    <div class="service-text">
+
+                        <h3>
+                            Mobile Development
+                        </h3>
+
+                        <p>
+                            Mobile application development and iOS
+                            preparation using React Native, Expo and
+                            Flutter-based projects.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>iOS</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= MAPS ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+
+                        <i class="fa fa-map-marked-alt"></i>
+
+                    </div>
+
+                    <div class="service-text">
+
+                        <h3>
+                            Maps & Location Systems
+                        </h3>
+
+                        <p>
+                            Interactive maps, location-based interfaces,
+                            restaurant zones, geolocation and delivery
+                            management systems.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>Leaflet</span>
+                            <span>OpenStreetMap</span>
+                            <span>Geolocation</span>
+                            <span>PostgreSQL</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="portfolio" id="portfolio">
+
+    <div class="container">
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-header text-center">
+
+            <p>Selected Work</p>
+
+            <h2>
+                Projects I've Built
+            </h2>
+
+        </div>
+
+
+        <!-- ================= FILTER ================= -->
+
+        <div class="portfolio-filter-wrapper">
+
+            <ul id="portfolio-filter">
+
+                <li
+                    data-filter="*"
+                    class="filter-active">
+                    All
+                </li>
+
+                <li data-filter=".filter-web">
+                    Web
+                </li>
+
+                <li data-filter=".filter-mobile">
+                    Mobile
+                </li>
+
+                <li data-filter=".filter-fullstack">
+                    Full-Stack
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- ================= PROJECT GRID ================= -->
+
+        <div class="row portfolio-container justify-content-center">
+
+
+            <!-- ================= HOOKS FOOD ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-fullstack filter-mobile">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-1.jpg"
+                            alt="Hooks Food courier and delivery platform">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            Hooks Food
+                        </h3>
+
+                        <p>
+                            Food delivery and courier platform involving
+                            customer ordering, courier operations,
+                            delivery tracking, order management,
+                            wallet functionality and backend services.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>React</span>
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= LOCATOR ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-web filter-fullstack">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-2.jpg"
+                            alt="Restaurant locator and delivery zone management system">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            Restaurant Locator & Zones
+                        </h3>
+
+                        <p>
+                            Location-based restaurant management system
+                            with interactive maps, restaurant zones,
+                            LGA organization and delivery-focused
+                            geographical management.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Leaflet</span>
+                            <span>OpenStreetMap</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= BITEXCHANGE ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-web filter-fullstack">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-3.jpg"
+                            alt="BitExchange web application">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            BitExchange
+                        </h3>
+
+                        <p>
+                            Exchange-style web application with a
+                            JavaScript frontend and Node.js backend,
+                            including server-side application logic,
+                            database integration and deployment.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>REST API</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SERVICE SNAP ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-mobile">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-4.jpg"
+                            alt="Service Snap mobile application">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            Service Snap
+                        </h3>
+
+                        <p>
+                            Service marketplace mobile application.
+                            Contributed to the iOS development and
+                            build preparation of the Flutter-based
+                            application.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>iOS</span>
+                            <span>Git</span>
+                            <span>Xcode</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= COURIER SYSTEM ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-fullstack filter-mobile">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-5.jpg"
+                            alt="Courier management dashboard">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            Courier Management System
+                        </h3>
+
+                        <p>
+                            Courier-focused application featuring
+                            delivery workflows, courier availability,
+                            order status management, location services
+                            and operational dashboards.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>React</span>
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= RESPONSIVE WEB ================= -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+
+                <div class="portfolio-wrap">
+
+                    <div class="portfolio-img">
+
+                        <img
+                            src="img/portfolio-6.jpg"
+                            alt="Responsive web development project">
+
+                    </div>
+
+                    <div class="portfolio-text">
+
+                        <h3>
+                            Responsive Web Applications
+                        </h3>
+
+                        <p>
+                            Responsive websites and business interfaces
+                            designed to work across desktop, tablet and
+                            mobile devices with a focus on usability
+                            and performance.
+                        </p>
+
+                        <div class="tech-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Responsive UI</span>
+
+                        </div>
+
+                        <a href="#contact" class="btn">
+                            Discuss Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DEVELOPMENT PROCESS ================= -->
+<section class="team" id="team">
+
+    <div class="container">
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-header text-center">
+
+            <p>How I Work</p>
+
+            <h2>
+                From Idea to Working Product
+            </h2>
+
+        </div>
+
+
+        <!-- PROCESS GRID -->
+
+        <div class="row justify-content-center">
+
+
+            <!-- ================= UNDERSTAND ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-lightbulb"></i>
+
+                        </div>
+
+                        <h2>
+                            01. Understand
+                        </h2>
+
+                        <h4>
+                            Requirements & Planning
+                        </h4>
+
+                        <p>
+                            I first understand the product, users,
+                            requirements and technical challenges
+                            before starting development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= BUILD ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-code"></i>
+
+                        </div>
+
+                        <h2>
+                            02. Build
+                        </h2>
+
+                        <h4>
+                            Frontend, Backend & Mobile
+                        </h4>
+
+                        <p>
+                            I build the user interface, application
+                            logic, APIs, database integrations and
+                            mobile experiences required by the product.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= TEST ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-vial"></i>
+
+                        </div>
+
+                        <h2>
+                            03. Test
+                        </h2>
+
+                        <h4>
+                            Quality & Reliability
+                        </h4>
+
+                        <p>
+                            I test interfaces, API flows, responsive
+                            layouts and application functionality to
+                            identify and fix problems before deployment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= DEPLOY ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="team-item">
+
+                    <div class="team-text">
+
+                        <div class="service-icon mb-4">
+
+                            <i class="fa fa-rocket"></i>
+
+                        </div>
+
+                        <h2>
+                            04. Deploy
+                        </h2>
+
+                        <h4>
+                            Production & Delivery
+                        </h4>
+
+                        <p>
+                            I prepare applications for deployment,
+                            configure environments and work with
+                            platforms such as Vercel, Render, Railway
+                            and Hostinger.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-header text-center">
+
+            <p>Get In Touch</p>
+
+            <h2>
+                Let's Build Something Together
+            </h2>
+
+        </div>
+
+
         <div class="contact-flex">
 
-            <!-- LEFT IMAGE -->
-            <img src="img/contact.jpg" class="contact-pic-size">
+            <!-- ================= CONTACT IMAGE ================= -->
 
-            <!-- RIGHT FORM -->
+            <div class="contact-image-wrapper">
+
+                <img
+                    src="img/jeff.jpeg"
+                    class="contact-pic-size"
+                    alt="Jeffery Ojemeneh">
+
+            </div>
+
+
+            <!-- ================= CONTACT FORM ================= -->
+
             <div class="divbackgr">
-                <h2>Contact Me</h2>
-               <form action="https://formsubmit.co/jeffmart111111@gmail.com" method="POST">
 
-    <!-- Spam Protection -->
-    <input type="text" name="_honey" style="display:none">
+                <h2>
+                    Contact Me
+                </h2>
 
-    <!-- Disable Captcha -->
-    <input type="hidden" name="_captcha" value="false">
 
-    <!-- Redirect after success -->
-    <input type="hidden" name="_next" value="https://jeff-mart213.github.io/portfolio/thankyou.html">
+                <form
+                    action="https://formsubmit.co/jeffmart111111@gmail.com"
+                    method="POST">
 
-    <!-- Email Subject -->
-    <input type="hidden" name="_subject" value="New Message From Portfolio Website">
 
-    <input type="text" name="name" class="inputsize" placeholder="Your Name" required>
+                    <!-- SPAM PROTECTION -->
 
-    <input type="email" name="email" class="inputsize" placeholder="Your Email" required>
+                    <input
+                        type="text"
+                        name="_honey"
+                        style="display:none">
 
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-    <button type="submit" class="buttonsize">Send Message</button>
+                    <!-- DISABLE CAPTCHA -->
 
-</form>
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false">
+
+
+                    <!-- REDIRECT -->
+
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://jeff-mart213.github.io/portfolio/thankyou.html">
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Message From Portfolio Website">
+
+
+                    <!-- NAME -->
+
+                    <input
+                        type="text"
+                        name="name"
+                        class="inputsize"
+                        placeholder="Your Name"
+                        required>
+
+
+                    <!-- EMAIL -->
+
+                    <input
+                        type="email"
+                        name="email"
+                        class="inputsize"
+                        placeholder="Your Email"
+                        required>
+
+
+                    <!-- MESSAGE -->
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Tell me about your project..."
+                        required></textarea>
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="buttonsize">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
             </div>
 
         </div>
+
     </div>
-</div>
 
-<!-- BLOG -->
-<div class="blog" id="blog">
-<div class="container">
-<div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-<p>From Blog</p>
-<h2>Latest Articles</h2>
-</div>
-<div class="row">
+</section>
 
-<div class="col-lg-6">
-<div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-<div class="blog-img">
-<img src="img/blog-1.jpg" alt="Blog">
-</div>
-<div class="blog-text">
-<h2>App Development</h2>
-<div class="blog-meta">
-<p><i class="far fa-user"></i>Admin</p>
-<p><i class="far fa-list-alt"></i>App Development</p>
-<p><i class="far fa-calendar-alt"></i>26-Jan-2023</p>
-<p><i class="far fa-comments"></i>5</p>
-</div>
-<p>App development is the multi-stage process of designing, building, testing, and deploying software for various devices.</p>
-</div>
-</div>
-</div>
 
-<div class="col-lg-6">
-<div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-<div class="blog-img">
-<img src="img/blog-2.jpg" alt="Blog">
-</div>
-<div class="blog-text">
-<h2>Web Development</h2>
-<div class="blog-meta">
-<p><i class="far fa-user"></i>Admin</p>
-<p><i class="far fa-list-alt"></i>Web Development</p>
-<p><i class="far fa-calendar-alt"></i>01-Jan-2024</p>
-<p><i class="far fa-comments"></i>10</p>
-</div>
-<p>Web development is the process of creating and maintaining websites and web applications for the internet or intranets. It involves writing code (HTML, CSS, JS) to build front-end and back-end logic.</p>
-</div>
-</div>
-</div>
 
-</div>
-</div>
-</div>
+<!-- ================= BLOG ================= -->
+<section class="blog" id="blog">
 
-<!-- FOOTER -->
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
-<div class="container-fluid">
-<div class="container">
-<div class="footer-info">
-<h2>Jeff Mart</h2>
-<h3>04 Ambassador Tijani Anus Part</h3>
-<div class="footer-menu">
-<p>+234 8136466528 +234 7011138167</p>
-<p>jeffmart111111@gmail.com</p>
-</div>
-<div class="footer-social">
-<a href=""><i class="fab fa-twitter"></i></a>
-<a href=""><i class="fab fa-facebook-f"></i></a>
-<a href=""><i class="fab fa-youtube"></i></a>
-<a href=""><i class="fab fa-instagram"></i></a>
-<a href=""><i class="fab fa-linkedin-in"></i></a>
-</div>
-</div>
-</div>
+    <div class="container">
 
-<div class="container copyright">
-<p>&copy; <a href="#">jeffmart</a>, All Right Reserved | Designed By Jeff Mart</p>
-</div>
-</div>
-</div>
+        <!-- SECTION TITLE -->
 
-<!-- BACK TO TOP -->
-<a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div class="section-header text-center">
 
-<!-- PRE LOADER -->
+            <p>From My Blog</p>
+
+            <h2>
+                Development Insights
+            </h2>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+
+            <!-- ================= ARTICLE 1 ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="blog-item">
+
+                    <div class="blog-img">
+
+                        <img
+                            src="img/blog-1.jpg"
+                            alt="Application development">
+
+                    </div>
+
+
+                    <div class="blog-text">
+
+                        <h2>
+                            Building Modern Applications
+                        </h2>
+
+
+                        <div class="blog-meta">
+
+                            <p>
+                                <i class="far fa-user"></i>
+                                Jeff Mart
+                            </p>
+
+                            <p>
+                                <i class="far fa-list-alt"></i>
+                                Development
+                            </p>
+
+                        </div>
+
+
+                        <p>
+                            Building a modern application involves more
+                            than writing code. It requires understanding
+                            the product, designing the user experience,
+                            connecting APIs and databases, testing
+                            functionality and preparing the application
+                            for deployment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ARTICLE 2 ================= -->
+
+            <div class="col-lg-6 col-md-6 mb-4">
+
+                <div class="blog-item">
+
+                    <div class="blog-img">
+
+                        <img
+                            src="img/blog-2.jpg"
+                            alt="Frontend and backend development">
+
+                    </div>
+
+
+                    <div class="blog-text">
+
+                        <h2>
+                            Frontend & Backend Development
+                        </h2>
+
+
+                        <div class="blog-meta">
+
+                            <p>
+                                <i class="far fa-user"></i>
+                                Jeff Mart
+                            </p>
+
+                            <p>
+                                <i class="far fa-list-alt"></i>
+                                Web Development
+                            </p>
+
+                        </div>
+
+
+                        <p>
+                            A good web application connects a useful
+                            frontend with reliable backend services.
+                            I enjoy working across both sides of the
+                            application to create complete and
+                            functional digital products.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-info text-center">
+
+            <h2>
+                Jeff Mart
+            </h2>
+
+            <h3>
+                Frontend • Backend • Mobile Development
+            </h3>
+
+
+            <div class="footer-menu">
+
+                <p>
+                    +234 8136466528
+                </p>
+
+                <p>
+                    +234 7011138167
+                </p>
+
+                <p>
+                    jeffmart111111@gmail.com
+                </p>
+
+            </div>
+
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="footer-social">
+
+                <a
+                    href="https://github.com/jeffmart33"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/jeffery-akhere-743164326"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright text-center">
+
+            <p>
+
+                &copy;
+
+                <a href="#">
+                    jeffmart
+                </a>
+
+                , All Rights Reserved
+
+                |
+
+                Designed By Jeff Mart
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<a
+    href="#home"
+    class="back-to-top">
+
+    <i class="fa fa-chevron-up"></i>
+
+</a>
+
+
+
+<!-- ================= PRE LOADER ================= -->
+
 <div id="loader" class="show">
-<div class="loader"></div>
+
+    <div class="loader"></div>
+
 </div>
 
-<!-- JS LIBRARIES -->
+
+
+<!-- ================= JS LIBRARIES ================= -->
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
 <script src="lib/easing/easing.min.js"></script>
+
 <script src="lib/wow/wow.min.js"></script>
+
 <script src="lib/waypoints/waypoints.min.js"></script>
+
 <script src="lib/typed/typed.min.js"></script>
+
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-<!-- CONTACT JS -->
+
+
+<!-- ================= CONTACT JS ================= -->
+
 <script src="mail/jqBootstrapValidation.min.js"></script>
+
 <script src="mail/contact.js"></script>
 
-<!-- TEMPLATE JS -->
+
+
+<!-- ================= MAIN JS ================= -->
+
 <script src="js/main.js"></script>
+
+
+
+<!-- ================= THREE.JS ================= -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+
+<script>
+
+/* =========================================================
+   THREE.JS HERO PARTICLE BACKGROUND
+========================================================= */
+
+const heroCanvas = document.getElementById("hero3d");
+
+if (heroCanvas) {
+
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+    );
+
+
+    const renderer = new THREE.WebGLRenderer({
+        canvas: heroCanvas,
+        alpha: true,
+        antialias: true
+    });
+
+
+    renderer.setPixelRatio(
+        Math.min(window.devicePixelRatio, 2)
+    );
+
+
+    renderer.setSize(
+        window.innerWidth,
+        window.innerHeight
+    );
+
+
+    /* PARTICLES */
+
+    const particlesGeometry =
+        new THREE.BufferGeometry();
+
+    const particlesCount = 1200;
+
+
+    const posArray =
+        new Float32Array(
+            particlesCount * 3
+        );
+
+
+    for (
+        let i = 0;
+        i < particlesCount * 3;
+        i++
+    ) {
+
+        posArray[i] =
+            (Math.random() - 0.5) * 20;
+
+    }
+
+
+    particlesGeometry.setAttribute(
+        "position",
+        new THREE.BufferAttribute(
+            posArray,
+            3
+        )
+    );
+
+
+    const particlesMaterial =
+        new THREE.PointsMaterial({
+
+            size: 0.05,
+
+            color: 0xffffff,
+
+            transparent: true,
+
+            opacity: 0.6
+
+        });
+
+
+    const particlesMesh =
+        new THREE.Points(
+            particlesGeometry,
+            particlesMaterial
+        );
+
+
+    scene.add(particlesMesh);
+
+
+    camera.position.z = 5;
+
+
+    /* ANIMATION */
+
+    function animate() {
+
+        requestAnimationFrame(
+            animate
+        );
+
+
+        particlesMesh.rotation.y += 0.0005;
+
+
+        renderer.render(
+            scene,
+            camera
+        );
+
+    }
+
+
+    animate();
+
+
+    /* RESIZE */
+
+    window.addEventListener(
+        "resize",
+        () => {
+
+            camera.aspect =
+                window.innerWidth /
+                window.innerHeight;
+
+            camera.updateProjectionMatrix();
+
+
+            renderer.setSize(
+                window.innerWidth,
+                window.innerHeight
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   HERO IMAGE EFFECT
+========================================================= */
+
+const heroImage =
+    document.querySelector(
+        ".hero-about-image img"
+    );
+
+
+if (heroImage) {
+
+    document.addEventListener(
+        "mousemove",
+        (event) => {
+
+            /* Only use effect on desktop */
+
+            if (window.innerWidth < 992) {
+
+                heroImage.style.transform =
+                    "none";
+
+                return;
+
+            }
+
+
+            const mouseX =
+                event.clientX;
+
+            const mouseY =
+                event.clientY;
+
+
+            const rotateY =
+                (
+                    mouseX /
+                    window.innerWidth -
+                    0.5
+                ) * 10;
+
+
+            const rotateX =
+                (
+                    0.5 -
+                    mouseY /
+                    window.innerHeight
+                ) * 10;
+
+
+            heroImage.style.transform =
+                `perspective(1000px)
+                 rotateY(${rotateY}deg)
+                 rotateX(${rotateX}deg)`;
+
+        }
+    );
+
+
+    heroImage.addEventListener(
+        "mouseleave",
+        () => {
+
+            heroImage.style.transform =
+                "none";
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   ABOUT / HERO IMAGE TILT
+========================================================= */
+
+const tiltImage =
+    document.querySelector(
+        ".tilt-card img"
+    );
+
+
+if (tiltImage) {
+
+    tiltImage.addEventListener(
+        "mousemove",
+        (event) => {
+
+            if (window.innerWidth < 992) {
+                return;
+            }
+
+
+            const rect =
+                tiltImage.getBoundingClientRect();
+
+
+            const x =
+                event.clientX -
+                rect.left;
+
+
+            const y =
+                event.clientY -
+                rect.top;
+
+
+            const centerX =
+                rect.width / 2;
+
+
+            const centerY =
+                rect.height / 2;
+
+
+            const rotateX =
+                -(y - centerY) / 25;
+
+
+            const rotateY =
+                (x - centerX) / 25;
+
+
+            tiltImage.style.transform =
+                `perspective(1000px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)`;
+
+        }
+    );
+
+
+    tiltImage.addEventListener(
+        "mouseleave",
+        () => {
+
+            tiltImage.style.transform =
+                "none";
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+const animatedElements =
+    document.querySelectorAll(
+        ".service-item, .portfolio-item, .team-item"
+    );
+
+
+if (
+    "IntersectionObserver" in window
+) {
+
+    const observer =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach(
+                    (entry) => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "show"
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+
+    animatedElements.forEach(
+        (element) => {
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   PREVENT BROKEN HASH SCROLL
+========================================================= */
+
+document.querySelectorAll(
+    'a[href^="#"]'
+).forEach(
+    (link) => {
+
+        link.addEventListener(
+            "click",
+            function (event) {
+
+                const targetId =
+                    this.getAttribute(
+                        "href"
+                    );
+
+
+                if (
+                    targetId === "#" ||
+                    !targetId
+                ) {
+
+                    return;
+
+                }
+
+
+                const target =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (!target) {
+
+                    return;
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
 
 </body>
 </html>
